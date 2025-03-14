@@ -1,0 +1,23 @@
+[
+  {
+    "ContainingType": "Mission11_Boud.Controllers.BookController",
+    "Method": "GetBooks",
+    "RelativePath": "Book/AllBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
