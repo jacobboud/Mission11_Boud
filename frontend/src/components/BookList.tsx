@@ -1,28 +1,49 @@
 import { useEffect, useState } from 'react';
-import { Book } from './types/Book';
+import { Book } from '../types/Book';
+import { useNavigate } from 'react-router-dom';
+import * as bootstrap from 'bootstrap'; // import bootstrap to initialize tooltip
 
-function BookList() {
+function BookList({ selectedCategories }: { selectedCategories: string[] }) {
   const [books, setBooks] = useState<Book[]>([]);
   const [pageSize, setPageSize] = useState<number>(10);
   const [pageNum, setPageNum] = useState<number>(1);
   const [totalItems, setTotalItems] = useState<number>(0);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc' | null>(null); // No sorting by default
+  const navigate = useNavigate();
 
   // Getting the info from the API
   useEffect(() => {
     const fetchBooks = async () => {
+      const categoryParams = selectedCategories
+        .map((c) => `categories=${encodeURIComponent(c)}`)
+        .join('&');
+
       const response = await fetch(
-        `https://localhost:5000/Book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}`
+        `https://localhost:5000/Book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}${
+          selectedCategories.length ? `&${categoryParams}` : ''
+        }`
       );
+
       const data = await response.json();
       setBooks(data.books);
       setTotalItems(data.totalNumBooks);
-      setTotalPages(Math.ceil(totalItems / pageSize));
+      setTotalPages(Math.ceil(data.totalNumBooks / pageSize));
     };
 
     fetchBooks();
-  }, [pageSize, pageNum, totalItems]);
+  }, [pageSize, pageNum, selectedCategories]);
+
+  useEffect(() => {
+    setPageNum(1);
+  }, [selectedCategories]);
+
+  useEffect(() => {
+    const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach((tooltipTriggerEl) => {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  }, []);
 
   // Sorting logic (applies only when sortOrder is set)
   const sortedBooks = sortOrder
@@ -60,7 +81,7 @@ function BookList() {
 
       {/* Printing all of the cards */}
       {sortedBooks.map((b) => (
-        <div id="bookCard" className="card" key={b.bookId}>
+        <div id="bookCard" className="card" key={b.bookID}>
           <h3 className="card-title">{b.title}</h3>
           <div className="card-body">
             <ul className="list-unstyled">
@@ -92,6 +113,15 @@ function BookList() {
                 <strong>Price: </strong>${b.price.toFixed(2)}
               </li>
             </ul>
+            <button
+              className="btn btn-success"
+              onClick={() => navigate(`/buy/${b.title}/${b.bookID}/${b.price}`)}
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Add this book to your cart"
+            >
+              Buy
+            </button>
           </div>
         </div>
       ))}
