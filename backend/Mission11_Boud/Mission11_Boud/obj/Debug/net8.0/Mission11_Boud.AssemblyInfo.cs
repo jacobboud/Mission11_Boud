@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission11_Boud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8632fd246a182abe9c20e59c7f057af04ebd9a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce3a9065c7117d96e9808fe187b5566edfe34280")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission11_Boud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission11_Boud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
