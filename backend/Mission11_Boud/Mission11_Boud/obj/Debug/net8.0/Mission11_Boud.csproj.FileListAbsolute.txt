@@ -128,7 +128,6 @@ C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Mission11_Boud.props
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Mission11_Boud.props
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission1.DA79CA61.Up2Date
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission11_Boud.dll
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\refint\Mission11_Boud.dll
@@ -136,3 +135,4 @@ C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission11_Boud.genruntimeconfig.cache
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\ref\Mission11_Boud.dll
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission11_Boud.sourcelink.json
+C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\bin\Debug\net8.0\Bookstore.sqlite
