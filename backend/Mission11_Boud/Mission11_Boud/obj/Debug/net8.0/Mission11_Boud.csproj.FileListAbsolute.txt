@@ -135,3 +135,4 @@ C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission11_Boud.pdb
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission11_Boud.genruntimeconfig.cache
 C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\ref\Mission11_Boud.dll
+C:\Users\jacob\source\repos\Mission11_Boud\backend\Mission11_Boud\Mission11_Boud\obj\Debug\net8.0\Mission11_Boud.sourcelink.json
